@@ -1,68 +1,102 @@
 <script lang="ts">
+// import { text } from 'stream/consumers'
 import { defineComponent } from 'vue'
+
+interface Menu {
+  text: string,
+  link: string
+  }
+
+  interface DataObject {
+  menuData: Array<Menu>
+}
 
 export default defineComponent({
   name: 'Header',
-  data() {
-    return {}
+  data(): DataObject{
+    return {
+		menuData:[
+			{
+				text: 'Home',
+				link: '/home'
+			},
+			{
+				text: 'About me',
+				link: '/about me'
+			},
+			{
+				text: 'Skills',
+				link: '/skills'
+			},
+			{
+				text: 'Portfolio',
+				link: '/portfolio'
+			},
+			{
+				text: 'Contacts',
+				link: '/contacts'
+			},		
+		]
+	}
   }
 })
 </script>
 
 <template>
-	<nav class="header">
-    	<h1 class="header-home-h1">Home</h1>
-		<h1 class="header-aboutme-h1"> About me </h1>
-		<h1 class="header-all-h1">Skills Portfolio Contacts</h1>
-		<hr class="hr-line">
-	</nav>
+	<div class="wrapper">
+		<div class="back">
+			<nav class="header">
+				<a class="header-nav" v-for="link in menuData" :key="link.text" :href="'link.link'">
+					{{ link.text }}
+				</a>	
+			</nav>
+			<div class="header-line">
+				<hr class="hr-line">
+			</div>
+		</div>
+	</div>
 </template>
 
 <style scoped>
+.back {
+	background-color: rgba(255, 255, 255, 1);
+	padding-left: 29px;
+	padding-right: 29px;
+}
 .header {
 	background-color: rgba(255, 255, 255, 1);
-}
-.header-home-h1 {
-	float: left;
+	height: 60.94px;
+	width: 936px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-bottom: 0px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-top: 33px;
+	font-family: "Arial"; 
 	font-size: 18px;
-	font-family: Gilroy-Bold, sans-serif;
-	margin-bottom: 8px;
-	margin-left: 250px;
-	margin-top: 33px;
-	padding-right: 1px;
-	color: rgba(7, 7, 7, 1);
-	height: 88px;
 }
-.header-aboutme-h1 {
-	float: left;
+.header-nav {
+	background-color: rgba(255, 255, 255, 1);
+	text-decoration:none;
 	font-size: 18px;
-	font-family: Gilroy-Bold, sans-serif;
-	margin-bottom: 8px;
-	margin-top: 33px;
-	margin-left: 156px;
-	color:rgba(130, 130, 130, 1);
-	height: 88px;
-}
-.header-all-h1 {
-	font-size: 18px;
-	font-family: Gilroy-Bold, sans-serif;
-	float: left;
-	margin-bottom: 8px;
+	font-family: "Arial";
 	color: rgba(130, 130, 130, 1);
-	margin-top: 33px;
-	margin-left: 156px;
-	margin-right: 250px;
-	padding-top: 0px;
-	height: 88px;
-	word-spacing: 135px;
+	font-size: 18px;
+	line-height: 22.28px;
+	font-weight: revert;
+}
+.header-line{
+	width: 936px;
+	max-width: 100%;
+	margin-left: auto;
+	margin-right: auto;
+	background-color: rgba(255, 255, 255, 1);
 }
 .hr-line {
-	color: rgba(130, 130, 130, 1) ;
-	clear:left;
-	margin-left: 250px;
-	margin-right: 250px;
-	margin-bottom: 0px;
-	border-top: 1px solid rgba(130, 130, 130, 1);
+	max-width: 100%;
+	margin: 0;
 	}
 </style>
-

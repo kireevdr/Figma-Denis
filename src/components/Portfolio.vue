@@ -10,47 +10,71 @@ export default defineComponent({
 </script>
 
 <template>
-  <section class="portfolio">
-    <h1 class="portfolio-h1">Portfolio</h1>
-    <img class="photo-portfolio" src="https://s3-alpha-sig.figma.com/img/6d43/fbc0/19eb6e72d32e254c8b02825f0390f169?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IJzsjZ4h4Xt7KcOI4lmsGUKYQk48B0Jwz30jww~96CFxFRItXkv73vr-6rFDxbSMgSE623m24mYLCIhgQuKKuQ23UzfUhjAfErTBrbMN8Q848VvubEIk3xvWh5QR~vnN6gpRyHVpEcnDAsZssrUHmeOm2ahKnyjjvne~WZ9EHOoTOHttzI~b5wShkBK9FkQV~ovd67CjXlUeNQnXDOg2zvs1nN~XzFHOZTHS8ui9BQMvRPQ5xLGl0ziRn5hXMB08XGRDW8SorDGreVC~k80omnFm2nvLr3dIZvHm36PWiBqfdE1uALcfin-Z2WGOzezTcNjZf7NeKosWPoM1Jp7s7g__" title="Foto woman" alt="Фото девушки" />
-    <p class="portfolio-p">Online fashion store - Homepage</p>
-    <img class="photo-portfolio" src="https://s3-alpha-sig.figma.com/img/4234/8d90/4dc19da808f0bf66bdd48c26c8228ec8?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LKn~KlOQgWqnqAuiS9cnJAvOH~lUjadI0xiRNZtwAPXHgTJFb-fpFECoC3byYVhweRZaDPszdvqHSU-CVAbWste-b900b~2Do1ZqW-EviIhJEwTujNnjxazKX8cSnPxn-tYCOKNV3QZXjyXOq9L3JFvo2c8Ed1mMYncT~AFJnDQecLEhAgGxLLZVCTtmReTa99fC~yTTjpsZEzfaR2E4EBv~YbnZdKVZ~qWrgYEkF4dMjJlAAuV7tncodGPRtJPyT-3682Ic0FJAQOroy5FxbRiLpdAEq2UfynEIajAovh8Og3HLy1Z8NGqpGgg5C5FdZ5T76K4D6o4TOnsxu9sCPA__" title="Foto man" alt="Фото мужчины" />
-    <p class="portfolio-p">Reebok Store - Concept</p>
-    <img class="photo-portfolio" src="https://s3-alpha-sig.figma.com/img/7bc4/92d5/1d2a3f989e046251ea9557eedaee9136?Expires=1713139200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=j0SuJ7~vxi1ZOfdT5LTq3kQ2pv0uGKfdzu0zB5MZpRuT9T6rrGciRS8g~IpSpgT-2wiFB3OZKwWGJXis7s0Gg6IFg9URRsgNPPJ22uw7ox4N2YaKk1uYZvf1eIHgiRehBFuivvlmqM1Q5ymEghN1x0uG4JMYLpfYsiAuG6ARcZbRuzMu-x9hARZ~iFQKTwQWXyXEwdtR1PvJ1KQsxTs93qAbGOix3JSHeuBknp1MNfpwaSyKCNhNsVDAnFPJzyk6XRyY2UAhSAmYxPC0NZYhx7gDpgIUwZykNlqRQqKCqQseNVZtr0WFd5hT4k0YR26ypb0-g2NIrDqxeWMRebxLcA__" title="Camera on the photo" alt="Фото камеры" />
-    <p class="portfolio-p">Braun Landing Page - Concept</p>
-  </section>
+  <div class="wrapper">
+    <div class="all">
+      <section class="portfolio">
+        <p class="portfolio-h1">Portfolio</p>
+        <div class="container">
+          <img class="photo-portfolio" src="https://s3-alpha-sig.figma.com/img/6d43/fbc0/19eb6e72d32e254c8b02825f0390f169?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pF-lhhN7VGWTBN~4INCKtAGUhui7PkJZ4Tr42nqkXSd5BPwllkwfCLy69M7iyhLeLWgoJVUOpn5V~RE-PVXYTfLc5ZEyGOEPRwAXdSwamhTqyNjmsdulmHugiLPfDvaSBT-KqUNcj0x5jHSFfCa0KIA3b3Wbf0yufusTIYawLep6ba2G3u0kA~C~dB-ZvWu8xm36fJEws8YJ9LORchtwwM-tbpnvXaEwds~mTgOzPRTFkr0TGUmmYiGYAJujqmbOix5rw2lC0A96F6G1EH5WLZSQsL7L6CrmZp0sA9dCvSpCr7fPSXtMlkQW77y6PuODhA-du-zfhXBW0FXdbjn-~g__" title="Foto woman" alt="Фото девушки" />
+          <p class="portfolio-p">Online fashion store - Homepage</p>
+          <img class="photo-portfolio" src="https://s3-alpha-sig.figma.com/img/4234/8d90/4dc19da808f0bf66bdd48c26c8228ec8?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=HppRlPHvhsLFuYYMTrRXcxYgjAPqS644v249CQNcPiUg03Uk2FNkO30dvtQeRpaoLHxKdOfPUPzBJ5Ek859PvQT81W-z-HydAe6EMHorMDOciT6zmYJiJ7e7F08~BPXm12~rstxEVU3teK0Grv9kK3mpV~OQHs7pu2dsz62NGBzHdUKEirBT1OAMX0se1s-eNuYpd32P7tCMCaErpH9W~4OxgJsrIZHx-05wiaHaaWH3xL~a6FrwP-s4Mn2bD8Ahp9SDYlPyTpRXfyqO2KSYrv1jM6JYDIuM9GMg9igY3fUV6LsgI6i3PHLkyqcgXdHxzxJIBlWaU9QYYP6UxDqiAw__" title="Foto man" alt="Фото мужчины" />
+          <p class="portfolio-p">Reebok Store - Concept</p>
+          <img class="photo-portfolio" src="https://s3-alpha-sig.figma.com/img/7bc4/92d5/1d2a3f989e046251ea9557eedaee9136?Expires=1714348800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=kq-oWK7F-Egv-RGIHiA2WAgzDQLfhhQCIrZIdsY6wHAAofBgqN9gZsRavhsV7re0mRRy5IQk7oQL1u6uBQ6-OumPuDEFZTUBrL9ZQHm8dkjxaB9weqLSHXtwz~4f7FTNyGChVfsbFw796UejqRF7bns2apl0CNGeaoarlemzifmpqEQK5DfeN0vJeK1ww79I9PWm33-RzwgElFAEUE-lGsHxqTrAVEXfZwZqZkSyxQ9zlm9OAZ6xmJ68BUrtCXViL1kT1QEUASbk8qUx2U2FCYNRHh8Kd9Cz3nKwduCAoNaUTTBIcQHeKv9nGjP4TfSU5iD3VBsicxNQuoLAPo8QUw__" title="Camera on the photo" alt="Фото камеры" />
+          <p class="portfolio-p">Braun Landing Page - Concept</p>
+        </div>
+      </section>
+    </div>
+  </div>
 </template>
 
 <style scoped>
-.portfolio{
-  width: 1445px;
-  height: 2165px;
-  padding-top: 70px;
+.all {
   background-color: rgba(246, 246, 246, 1);
+  padding-left: 29px;
+	padding-right: 29px;
+}
+.portfolio{
+  padding-top: 70px;
+  padding-bottom: 40px;
+  background-color: rgba(246, 246, 246, 1);
+  width: 936px;
+	max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
 .portfolio-h1 {
-  padding-top: 50px;
   text-align: center;
   font-weight: bold;
   font-size: 34px;
-  font-family: Gilroy-Bold, sans-serif;
-  margin-bottom: px;
+  font-family: "Arial";
+  padding-bottom: 30px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 936px;
+	max-width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 14px;
 }
 .photo-portfolio {
-  margin-left: 257.7px;
-  width: 936.24px;
-  height: 510px;
-  margin-top: 45px;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
 }
 .portfolio-p {
   font-weight: bold;
   color: #282833;
-  padding-top: 27px;
-  padding-bottom: 10px;
+  padding-top: 17px;
+  padding-bottom: 50px;
   line-height: 21.83px;
-  font-family: Gilroy-Medium, sans-serif ;
+  font-family: "Arial";
   font-size: 18px;
   line-height: 21.83px;
   text-align: center;
+  text-decoration: underline;
 }
 </style>
