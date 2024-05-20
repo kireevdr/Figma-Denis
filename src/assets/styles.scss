@@ -1,0 +1,43 @@
+@import "./variables.scss";
+// @import "../node_modules/bootstrap/scss/bootstrap";
+@import '/node_modules/bootstrap';
+
+body {
+	font-family: $ffamily; 
+	background-color: $back;
+	width: $width;
+	background-color: $backlor;
+	color: $col;
+}
+
+@mixin padding {
+	padding: {
+		left: 29px;
+		right: 29px;
+	}
+	background-color: $back;
+}
+
+@mixin marg-max-width {
+	margin: {
+		left: auto;
+		right: auto;
+	}
+	max-width: 100%;
+}
+
+@mixin fle {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+@mixin align-fontw {
+	font-weight: bold;
+	text-align: center;
+}
+
+@mixin col-ff-align {
+	text-align: center;
+	color: $col;
+	font-family: $ffamily;
+}
