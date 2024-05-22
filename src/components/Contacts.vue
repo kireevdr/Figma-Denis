@@ -33,44 +33,44 @@ export default defineComponent({
 <style scoped lang="scss">
 @import '../assets/styles.scss';
 .b-contacts {
+  width: $width;
+	@include marg-max-width;
   @include padding;
-  padding-top: 81px;
-  height: 650px;
+  padding-top: g(12);
+  height: 40.625rem;
   background-color: $back;
-
+  color: #282833;
 }
 .b-contacts__heading {
   @include align-fontw;
-  font-size: 34px;
-  margin-top: 20px;
+  font-size: 2.125rem;
+  margin-top: g(8);
 }
 .b-contacts__text {
-  color: #282833;
-  margin-top: 45px;
-  line-height: 21.83px;	
-  font-size: 18px;
-  line-height: 21.83px;
+  margin-top: g(10);
+  line-height: 1.3644rem;	
+  font-size: 1.125rem;
   text-align: center;
   font-weight: 500;
 }
 .b-contacts__button {
-  width: 180.5px;
-  height: 42px;
-  margin-top: 29.6px;
-  padding-top: 11px;
+  width: 11.2813rem;
+  height: 2.625rem;
+  margin-top: g(9);
+  padding-top: g(7);
   background:  #282833;
-  font-size: 18px;
+  font-size: 1.125rem;
   line-height: 12px;
   text-align: center;
   font-weight: 700;
   color: #FFFFFF;
-  border-radius: 30px;
+  border-radius: 1.875rem;
 }
 .b-contacts__menu {
   @include marg-max-width;
   width: $width;
-  margin-top: 86.64px;
-  height: 40px;
+  margin-top: g(12);
+  height: 1.875rem;
 }
 /* .b-contacts__menu-in {
 }
@@ -81,19 +81,17 @@ export default defineComponent({
 .b-contacts__menu-b {
 } */
 .b-contacts__footer {
-  margin-top: 45.06px;
+  margin-top: g(11);
   color: $col;
   @include align-fontw;
   font-size: 14px;
-  padding-bottom: 65px;
+  padding-bottom: g(12);
 }
-
 @mixin col-ff-align {
 	text-align: center;
 	color: $col;
 	font-family: $ffamily;
 }
-
 a {
 	&:hover {
 		color: black;
@@ -102,11 +100,9 @@ a {
 		color: green;
 	}
 }
-
 .b-contacts__button {
 	&:hover {
 	color: red
 }
 }
-
 </style>

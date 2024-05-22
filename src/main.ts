@@ -9,6 +9,7 @@ import router from './router'
 
 import './assets/normalize.css'
 import './assets/main.css'
+import './assets/styles.scss'
 
 
 const app = createApp(App)
