@@ -55,6 +55,8 @@ export default defineComponent({
 .b-header {
 	width: $width;
 	background-color: $back;
+	@include marg-max-width;
+	padding: 0%;
 }
 .b-header__menu {
 	background-color: $back;

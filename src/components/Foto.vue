@@ -32,23 +32,24 @@ section.b-information.container
 @import '../assets/styles.scss';
 .b-information {
 	width: $width;
+	@include marg-max-width;
+	padding: 0%;
 }
 .b-information__flex {
-	max-width: $width;
-	@include marg-max-width;
+	// @include marg-max-width;
   	max-width: $width;	
 }
 .b-information__name {
 	font-weight: 600;
 	font-family: $ffamily; 
-	font-size: 2.9588rem;
+	font-size: rem(47.3408);
 	color:  #282833;
 }
 .b-information__minsk {
 	font-weight: 400;
 	color: #282833;
 	font-family: $ffamily;
-	font-size: 1.125rem;
+	font-size: rem(18);
 	padding-bottom: g(6);
 }
 .b-information__flex2 {
@@ -74,11 +75,12 @@ section.b-information.container
 }
 .b-information__photo {
 	max-width: $width;
+	@include marg-max-width;
 	display: block;
 	object-fit: cover;
 	object-position: 66% 44%;
-	height: 24.1875rem;
-	@include marg-max-width;
+	height: rem(387);
+	
 }
 .b-information__languge-eng, .b-information__languge-ru {
 	&:hover {

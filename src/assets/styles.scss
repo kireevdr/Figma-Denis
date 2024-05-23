@@ -12,10 +12,11 @@ body {
 	color: $col;
 	// height: 4759px; 
 	max-width: 1444px;
-	// padding-left: 29px; 
-	// padding-right: 29px;
+	padding-left: 29px; 
+	padding-right: 29px;
 	margin-left: auto;
 	margin-right: auto; 
+	
 }
 
 @mixin padding {
@@ -52,4 +53,17 @@ body {
 	text-align: center;
 	color: $col;
 	font-family: $ffamily;
+}
+
+$baseFontSize: 16;
+@function rem($pixels, $min: 12) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($min)) {
+    $min: $min * 1px;
+  }
+  $context: 16px;
+
+  @return #{"max("}#{$pixels / $context * 1rem}#{", "}#{$min}#{")"};
 }

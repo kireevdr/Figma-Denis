@@ -10,7 +10,7 @@ export default defineComponent({
 </script>
 
 <template lang="pug">
-.container
+.container.b-skills-conteiner
 	section.b-skills.row
 		p.b-skills__heading.col-12 Skills
 		p.b-skills__text.col-12 I work in such programs as
@@ -58,11 +58,13 @@ export default defineComponent({
   
   <style scoped lang="scss">
   @import '../assets/styles.scss';
-.b-skills {
-	color: #282833;
+  .b-skills-conteiner {
 	width: $width;
 	@include marg-max-width;
-}
+	color: #282833;
+  }
+// .b-skills {
+// }
 .b-skills__heading {
 	@include align-fontw;
 	font-size: 2.125rem;

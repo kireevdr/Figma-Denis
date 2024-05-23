@@ -40,6 +40,9 @@ export default defineComponent({
 	max-width: 90.25rem;
 	margin-left: auto;
 	margin-right: auto; 
+	width: $width;
+	@include marg-max-width;
+	color: #282833;
 }
 .b-aboutme {
 	height: 31.625rem;
