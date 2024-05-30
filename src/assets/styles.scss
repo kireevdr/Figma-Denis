@@ -1,22 +1,35 @@
 @import "./variables.scss";
 // @import "../node_modules/bootstrap/scss/bootstrap";
-@import '/node_modules/bootstrap';
+@import '/node_modules/bootstrap/scss/bootstrap';
+
+@import '/src/assets/css-vars';
 
 body {
 	font-family: $ffamily; 
-	background-color: $back;
-	width: $width;
-	background-color: $backlor;
+	// background-color: $back;
+	// width: $width;
+	// background-color: $backlor;
 	color: $col;
+	// height: 4759px; 
+	max-width: 1444px;
+	padding-left: 29px; 
+	padding-right: 29px;
+	margin-left: auto;
+	margin-right: auto; 
+	
 }
 
 @mixin padding {
 	padding: {
-		left: 29px;
-		right: 29px;
+		left: g(10);
+		right: g(10);
 	}
 	background-color: $back;
 }
+
+@function g($n) {
+	@return var(--g#{$n});
+  } 
 
 @mixin marg-max-width {
 	margin: {
@@ -40,4 +53,17 @@ body {
 	text-align: center;
 	color: $col;
 	font-family: $ffamily;
+}
+
+$baseFontSize: 16;
+@function rem($pixels, $min: 12) {
+  @if (unitless($pixels)) {
+    $pixels: $pixels * 1px;
+  }
+  @if (unitless($min)) {
+    $min: $min * 1px;
+  }
+  $context: 16px;
+
+  @return #{"max("}#{$pixels / $context * 1rem}#{", "}#{$min}#{")"};
 }
