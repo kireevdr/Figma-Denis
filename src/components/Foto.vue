@@ -25,7 +25,7 @@ section.b-information.container
 			p.b-information__languge-ru RU 
 		//- div.w-100
 	.row.row-foto.no-gutters
-		img.b-information__photo.col-12(src='https://s3-alpha-sig.figma.com/img/4a3f/6358/473d92de61764f572524ac59200c7086?Expires=1716768000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EDOd9uyzPo1BR-gSm6VXDfwDfHGdNoxXibTIOfJA9WU0RkEY-POPshINaIhHWCchFSAdrSwFhHQO8e5BlQJ2cVUE0zIEiJ~gwCwBEvHkTJ9WmDVYZF1hJM0qlR6M544SdFHVpRt852JS6DzZdT8yJ5H8mlG7ln-AXW3LlRSiBEW~iAEfHrwmc2tubhSgt3iJzXMBK6DOiPKr4vykqDh7Odf03y43Tt13VA59bElu~5XE331OAPTMvmQDPIyVNM7MjA2oELvSwv7P2CfAtM1B~WWZy21mhQHJbpA6seDMsV1BFu-7C6PTDP1qAtIMwtxsxl687W09umOLFFp5C0sJwQ__' title='Foto' alt='Фото профиля')
+		img.b-information__photo.col-12(src='https://s3-alpha-sig.figma.com/img/4a3f/6358/473d92de61764f572524ac59200c7086?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EVl3~s8-LJLdDjW4fCh0ixzNfcxU5oP8S9pvx8m3AExSBsz3YX1YaVMtNZ86lmG50ucQ~3RDzjPjATW-Fy-AIcLazkUD7~-qQBnvAnAe4scjBsJzsUoAuHA7vt6afhdViXTan4LajbK7zS8oDq0HXvpDWAvDG~6PWMhJfuKheawCAcxtLB6~DaAdBGLf66Kk~D8rwj8MbptpqYVbLAVzPyT38k5~K47Q0WQj6gm3m~Iw7tSjHA2l46ye3-xfM3K33lwbB~cc-Xp6-CaJgKVf2I~0niT42~YWlFvBbp-0E~8dcsRqcQrrIYw2knK-12VCF7Ci4P1vpgITNmGh5isdOg__' title='Foto' alt='Фото профиля')
 </template>
 
 <style scoped lang="scss">

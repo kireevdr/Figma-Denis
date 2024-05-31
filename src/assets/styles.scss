@@ -65,5 +65,5 @@ $baseFontSize: 16;
   }
   $context: 16px;
 
-  @return #{"max("}#{$pixels / $context * 1rem}#{", "}#{$min}#{")"};
+  @return #{"max("}#{$pixels/$context*1rem}#{", "}#{$min}#{")"};
 }
