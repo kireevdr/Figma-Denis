@@ -5,6 +5,8 @@ import Skills from '@/components/Skills.vue'
 import Portfolio from '@/components/Portfolio.vue'
 import Contacts from '@/components/Contacts.vue'
 import Foto from '@/components/Foto.vue'
+import Circuitry from '@/components/Circuitry.vue'
+
 import { defineComponent } from 'vue'
 
 export default defineComponent({
@@ -16,6 +18,7 @@ export default defineComponent({
     Portfolio,
     Contacts,
     Foto,
+    Circuitry,
   }
 })
 </script>
@@ -45,6 +48,7 @@ export default defineComponent({
   <!-- <div class="wrapper"> -->
   <Contacts />
 <!-- </div> -->
+  <Circuitry />
 
 </template>
 
