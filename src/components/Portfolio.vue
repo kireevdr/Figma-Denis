@@ -14,11 +14,11 @@ export default defineComponent({
   .container    
     section.b-portfolio.row
       p.b-portfolio__heading.col-12 Portfolio
-      img.col-12.b-portfolio__photo(src='/portfolio-1.png' loading="lazy" title='Foto woman' alt='Фото девушки')
+      img.col-12.b-portfolio__photo(src='/portfolio-1.png' loading="lazy" title='An example of the design of an online fashion store - Hompage' alt='Online fashion store')
       p.b-portfolio__text.col-12 Online fashion store - Homepage
-      img.col-12.b-portfolio__photo(src='/portfolio-2.png' loading="lazy" title='Foto man' alt='Фото мужчины')
+      img.col-12.b-portfolio__photo(src='/portfolio-2.png' loading="lazy" title='An example of the design of Reebok Store - Concept' alt='Reebok Store - Concept')
       p.b-portfolio__text.col-12 Reebok Store - Concept
-      img.col-12.b-portfolio__photo(src='/portfolio-3.png' loading="lazy" title='Camera on the photo' alt='Фото камеры')
+      img.col-12.b-portfolio__photo(src='/portfolio-3.png' loading="lazy" title='An example of the design of Braun Landing Page - Concept' alt='Braun Landing Page - Concept')
       p.b-portfolio__text.col-12 Braun Landing Page - Concept
 </template>
 

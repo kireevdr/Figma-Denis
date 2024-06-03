@@ -25,7 +25,7 @@ section.b-information.container
 			p.b-information__languge-ru RU 
 		//- div.w-100
 	.row.row-foto.no-gutters
-		img.b-information__photo.col-12(src='https://s3-alpha-sig.figma.com/img/4a3f/6358/473d92de61764f572524ac59200c7086?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EVl3~s8-LJLdDjW4fCh0ixzNfcxU5oP8S9pvx8m3AExSBsz3YX1YaVMtNZ86lmG50ucQ~3RDzjPjATW-Fy-AIcLazkUD7~-qQBnvAnAe4scjBsJzsUoAuHA7vt6afhdViXTan4LajbK7zS8oDq0HXvpDWAvDG~6PWMhJfuKheawCAcxtLB6~DaAdBGLf66Kk~D8rwj8MbptpqYVbLAVzPyT38k5~K47Q0WQj6gm3m~Iw7tSjHA2l46ye3-xfM3K33lwbB~cc-Xp6-CaJgKVf2I~0niT42~YWlFvBbp-0E~8dcsRqcQrrIYw2knK-12VCF7Ci4P1vpgITNmGh5isdOg__' title='Foto' alt='Фото профиля')
+		img.b-information__photo.col-12(src='https://s3-alpha-sig.figma.com/img/4a3f/6358/473d92de61764f572524ac59200c7086?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=EVl3~s8-LJLdDjW4fCh0ixzNfcxU5oP8S9pvx8m3AExSBsz3YX1YaVMtNZ86lmG50ucQ~3RDzjPjATW-Fy-AIcLazkUD7~-qQBnvAnAe4scjBsJzsUoAuHA7vt6afhdViXTan4LajbK7zS8oDq0HXvpDWAvDG~6PWMhJfuKheawCAcxtLB6~DaAdBGLf66Kk~D8rwj8MbptpqYVbLAVzPyT38k5~K47Q0WQj6gm3m~Iw7tSjHA2l46ye3-xfM3K33lwbB~cc-Xp6-CaJgKVf2I~0niT42~YWlFvBbp-0E~8dcsRqcQrrIYw2knK-12VCF7Ci4P1vpgITNmGh5isdOg__' rel="nofollow" title='Denis – UX/UI designer from Minsk' alt='Photo of the UX/UI designer Denis Novak from Minsk wearing glasses, a black hoodie and a cap.')
 </template>
 
 <style scoped lang="scss">
