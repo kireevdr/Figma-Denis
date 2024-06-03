@@ -13,7 +13,7 @@ export default defineComponent({
 .wrapper
 	.container
 		.row.b-aboutme
-			p.b-aboutme__heading.col-12.justify-content-center About me
+			h1.b-aboutme__heading.col-12.justify-content-center About me
 			.b-aboutme__text.col-12
 				| Hi, I'm Denis – UX/UI designer from Minsk. 
 				br

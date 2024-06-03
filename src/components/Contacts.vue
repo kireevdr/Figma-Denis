@@ -16,16 +16,16 @@ export default defineComponent({
     p.b-contacts__text.col-12
       | Want to know more or just chat? 
       br
-      | ou are welcome!
+      | You are welcome!
     p.b-contacts__button.col-12 Send message
     .w-100
     .b-contacts__menu.row.justify-content-between
-      img.col-auto.b-contacts__menu-in(src='/in.png' title='In' alt='In' loading="lazy")
-      img.col-auto.b-contacts__menu-insta(src='/insta.png' title='Insta' alt='Insta' loading="lazy")
-      img.col-auto.b-contacts__menu-be(src='/behance.png' title='Be' alt='Be' loading="lazy")
-      img.col-auto.b-contacts__menu-b(src='/b.png' title='B' alt='B' loading="lazy")
+      img.col-auto.b-contacts__menu-in(src='/in.png' title='LinkedIn' alt='LinkedIn icon' loading="lazy" rel="nofollow")
+      img.col-auto.b-contacts__menu-insta(src='/insta.png' title='Instagram' alt='Instagram icon' loading="lazy" rel="nofollow")
+      img.col-auto.b-contacts__menu-be(src='/behance.png' title='Behance' alt='Behance icon' loading="lazy" rel="nofollow")
+      img.col-auto.b-contacts__menu-b(src='/b.png' title='Dribble' alt='Dribble icon' loading="lazy" rel="nofollow")
     p.b-contacts__footer.col-12
-      | Like me on
+      | Like me as a UX/UI designer from Minsk on
       br
       | LinkedIn, Instagram, Behance, Dribble
 </template>
