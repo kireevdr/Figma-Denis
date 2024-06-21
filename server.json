@@ -1,0 +1,141 @@
+{
+	"aboutme": {
+		"items": [
+			{
+				"text": "Hi, I'm Denis – UX/UI designer from Minsk. <br> I'm interested in design and everything connected with it. "		
+			},
+			{
+				"text": "I'm studying at courses 'Web and mobile design <br> interfaces' in IT-Academy."
+			},
+			{
+				"text": "Ready to implement excellent projects <br> with wonderful people."
+			}
+		],
+		"title": "About me"
+	 },	
+	
+ 	"header": [
+	{
+        "text": "Home",
+        "link": "/home"
+    },
+    {
+        "text": "About me",
+        "link": "/about me"
+    },
+    {
+        "text": "Skills",
+        "link": "/skills"
+    },
+    {
+        "text": "Portfolio",
+        "link": "/portfolio"
+    },
+    {
+        "text": "Contacts",
+        "link": "/contacts"
+    }		
+  ],
+  
+ "portfolio": {
+	"items": [
+		{
+			"text": "Online fashion store - Homepage",
+			"image": "/portfolio-1.png",
+			"title": "An example of the design of an online fashion store - Hompage",
+			"alt": "Online fashion store",
+			"loading": "lazy",
+			"link": "/link"
+		},
+		{
+			"text": "Reebok Store - Concept",
+			"image": "/portfolio-2.png",
+			"title": "An example of the design of Reebok Store - Concept",
+			"alt": "Reebok Store - Concept",
+			"loading": "lazy",
+			"link": "/link"
+		},
+		{
+			"text": "Braun Landing Page - Concept",
+			"image": "/portfolio-3.png",
+			"title": "An example of the design of Braun Landing Page - Concept",
+			"alt": "Braun Landing Page - Concept",
+			"loading": "lazy",
+			"link": "/link"
+		}	
+	],
+	"title": "Portfolio"
+	
+ },	
+
+"foto": {
+	"header": "Denis <br> Novik",
+	"text": "UX | UI designer <br> 24 years old, Minsk",
+		"links": [
+			{
+				"text": "RU ",
+				"link": "/ru"
+			},
+			{
+				"text": " | ENG",
+				"link": "/eng"
+			}
+			
+],
+	"image": "https://s3-alpha-sig.figma.com/img/4a3f/6358/473d92de61764f572524ac59200c7086?Expires=1719187200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=R-jOI~8lkn1VMNTWXwy3~OX2QYAAmb~NUzbpn8l7S6099VcI4RdzhNbEIQrI2fHaoA-G7TnznqBcnCajYXNFvEukbBGbBwFPnayUXKEibVgxUjLAwRo-Jcf0k76ManIIuFA0fVQuqyNEUfjzJ-BFW8JpkIJDEBNkq-9SNuui4xhk-qjHGIjdgnUa5sNtxRsaYbrS3H~-CjNyB0HISDjINRa2NBv4he~qh8KWLVLqhdpywK69XMTRK5JBozOTWAsKLmFxPHtVZWZcouIuZa-JdEBPZK47Q1FLAu~wWwf0-RD66-uM~B9jHhzkiLwgSV10h5PaUE~cGxmmGFWRWSGf4Q__"
+},
+
+"skills": {
+	"title": "Skills",
+	"text":"I work in such programs as",
+	"three":"★ ★ ★",
+	"four":"★ ★ ★ ★",
+	"ps": "Ps",
+	"ai": "Ai",
+	"ae": "Ae",
+	"adobephoroshop": "Adobe <br> Phoroshop",
+	"adobeillustrator": "Adobe <br> Illustrator",
+	"adobeaftereffects": "Adobe <br> After Effects",
+	"figma": "Figma"
+},
+
+"contacts": {
+	"title": "Contacts",
+	"text": "Want to know more or just chat? <br> You are welcome!",
+	"footer": "Like me as a UX/UI designer from Minsk on LinkedIn, Instagram, Behance, Dribble",
+	"button": "Send message",
+	"link": "/link",
+	
+	"icons": [
+		{
+			"iconin": "/in.png",
+			"title": "LinkedIn",
+			"alt": "LinkedIn icon",
+			"loading": "lazy",
+			"rel": "nofollow"
+		},
+		{
+			"iconin": "/insta.png",
+			"title": "Instagram",
+			"alt": "Instagram icon",
+			"loading": "lazy",
+			"rel": "nofollow"
+		},
+		{
+			"iconin": "/behance.png",
+			"title": "Behance",
+			"alt": "Behance icon",
+			"loading": "lazy",
+			"rel": "nofollow"
+		},
+		{
+			"iconin": "/b.png",
+			"title": "Dribble",
+			"alt": "Dribble icon",
+			"loading": "lazy",
+			"rel": "nofollow"
+		}
+	]
+	}
+}
+

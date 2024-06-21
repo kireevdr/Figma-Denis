@@ -11,7 +11,6 @@ import './assets/normalize.css'
 import './assets/main.css'
 import './assets/styles.scss'
 
-
 const app = createApp(App)
 
 app.use(createPinia())

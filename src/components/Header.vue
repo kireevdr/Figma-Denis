@@ -1,6 +1,6 @@
 <script lang="ts">
-// import { text } from 'stream/consumers'
 import { defineComponent } from 'vue'
+import axios from 'axios';
 
 interface Menu {
   text: string,
@@ -16,30 +16,19 @@ export default defineComponent({
   data(): DataObject{
     return {
 		menuData:[
-			{
-				text: 'Home',
-				link: '/home'
-			},
-			{
-				text: 'About me',
-				link: '/about me'
-			},
-			{
-				text: 'Skills',
-				link: '/skills'
-			},
-			{
-				text: 'Portfolio',
-				link: '/portfolio'
-			},
-			{
-				text: 'Contacts',
-				link: '/contacts'
-			},		
 		]
 	}
-  }
-})
+  },
+  mounted() {
+	axios.get('http://localhost:3000/header')
+	.then(response => {
+	this.menuData = response.data
+	})
+	.catch((error => {
+	console.error(error)
+	}));
+	}
+	})
 </script>
 
 <template lang="pug">

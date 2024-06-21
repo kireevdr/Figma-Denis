@@ -1,35 +1,59 @@
 <script lang="ts">
 import { defineComponent } from 'vue'
+import axios from 'axios';
+
+interface Menu {
+  text: string,
+  title: string,
+  link: string,
+  }
+
+  interface DataObject {
+  aboutmeData: Array<Menu>
+}
 
 export default defineComponent({
-  name: 'ResumeHeader',
-  data() {
-    return {}
-  }
-})
+  name: 'Aboutme',
+  data(): DataObject{
+    return {
+		aboutmeData:[
+		]
+	}
+  },
+
+	mounted() {
+	axios.get('http://localhost:3000/aboutme')
+	.then(response => {
+	this.aboutmeData = response.data
+	})
+	.catch((error => {
+	console.error(error)
+	}));
+	}
+	})
 </script>
 
 <template lang="pug">
 .wrapper
 	.container
 		.row.b-aboutme
-			h1.b-aboutme__heading.col-12.justify-content-center About me
-			.b-aboutme__text.col-12
-				| Hi, I'm Denis – UX/UI designer from Minsk. 
-				br
-				| 			I'm interested in design and everything connected with it. 
-				br
-				p
-				br
-				| 			I'm studying at courses "Web and mobile design 
-				br
-				| 			interfaces" in IT-Academy.
-				br
-				p
-				br
-				| 			Ready to implement excellent projects
-				br
-				| 			with wonderful people.
+			h1.b-aboutme__heading.col-12.justify-content-center {{ aboutmeData.title }}
+			.b-aboutme__text.col-12(v-for='link in aboutmeData.items' :key='link.text' v-html="link.text")
+				//- | Hi, I'm Denis – UX/UI designer from Minsk. 
+				//- br
+				//- | 			I'm interested in design and everything connected with it. 
+				//- br
+				//- p
+				//- br
+				//- | 			I'm studying at courses "Web and mobile design 
+				//- br
+				//- | 			interfaces" in IT-Academy.
+				//- br
+				//- p
+				//- br
+				//- | 			Ready to implement excellent projects
+				//- br
+				//- | 			with wonderful people. v-for
 
 </template>
 
@@ -37,7 +61,6 @@ export default defineComponent({
 @import '../assets/styles.scss';
 .wrapper {
 	background-color: $backlor;
-	max-width: 90.25rem;
 	margin-left: auto;
 	margin-right: auto; 
 	width: $width;
@@ -45,18 +68,18 @@ export default defineComponent({
 	color: #282833;
 }
 .b-aboutme {
-	height: 31.625rem;
 	@include marg-max-width;
 	@include padding;
 	background-color: $backlor;
 	text-align: center;
+	max-width: rem(600);
 }
 .b-aboutme__heading {
 	color: #282833;
 	@include align-fontw;
 	font-size: 2.125rem;
 	font-family: $ffamily;
-	padding-top: g(13);
+	padding-top: g(12);
 }
 .b-aboutme__text {
 	text-align: center;

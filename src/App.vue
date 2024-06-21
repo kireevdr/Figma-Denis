@@ -6,10 +6,26 @@ import Portfolio from '@/components/Portfolio.vue'
 import Contacts from '@/components/Contacts.vue'
 import Foto from '@/components/Foto.vue'
 import Circuitry from '@/components/Circuitry.vue'
+import axios from 'axios'
 
 import { defineComponent } from 'vue'
 
+// axios.get('http://localhost:3000/')
+// .then(response => {
+//   console.log(response)
+// })
+// .catch((error => {
+//   console.error(error)
+// }));
+
 export default defineComponent({
+  data() {
+    return {
+      header: [],
+      aboutme: [],
+    }
+  },
+
   name: 'Website',
   components: {
     Headerr,
@@ -24,8 +40,10 @@ export default defineComponent({
 </script>
 
 <template>
+<!-- 
+<div>{{ header.text }}</div> -->
 
-    <!-- <div class="wrapper"> -->
+<!-- <div class="wrapper"> -->
   <Headerr />
 <!-- </div> -->
 
