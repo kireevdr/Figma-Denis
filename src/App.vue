@@ -1,22 +1,13 @@
 <script lang="ts">
-import Headerr from '@/components/Header.vue'
+import Header from '@/components/Header.vue'
 import AboutMe from '@/components/AboutMe.vue'
 import Skills from '@/components/Skills.vue'
 import Portfolio from '@/components/Portfolio.vue'
 import Contacts from '@/components/Contacts.vue'
 import Foto from '@/components/Foto.vue'
 import Circuitry from '@/components/Circuitry.vue'
-import axios from 'axios'
-
-import { defineComponent } from 'vue'
-
-// axios.get('http://localhost:3000/')
-// .then(response => {
-//   console.log(response)
-// })
-// .catch((error => {
-//   console.error(error)
-// }));
+import ListUsers from '@/components/ListUsers.vue'
+import {defineComponent} from 'vue'
 
 export default defineComponent({
   data() {
@@ -28,49 +19,35 @@ export default defineComponent({
 
   name: 'Website',
   components: {
-    Headerr,
+    Header,
     AboutMe,
     Skills,
     Portfolio,
     Contacts,
     Foto,
     Circuitry,
+    ListUsers,
   }
 })
 </script>
 
 <template>
-<!-- 
-<div>{{ header.text }}</div> -->
+  <Header/>
 
-<!-- <div class="wrapper"> -->
-  <Headerr />
-<!-- </div> -->
+  <Foto/>
 
-<!-- <div class="wrapper"> -->
-  <Foto />
-<!-- </div> -->
+  <AboutMe/>
 
-<!-- <div class="wrapper"> -->
-  <AboutMe />
-<!-- </div> -->
+  <Skills/>
 
-<!-- <div class="wrapper"> -->
-  <Skills />
-<!-- </div> -->
+  <Portfolio/>
 
-<!-- <div class="wrapper"> -->
-  <Portfolio />
-<!-- </div> -->
+  <Contacts/>
 
-  <!-- <div class="wrapper"> -->
-  <Contacts />
-<!-- </div> -->
-  <Circuitry />
+  <Circuitry/>
 
+  <ListUsers/>
 </template>
 
 <style scoped lang="scss">
-// @import './assets/styles.scss';
-// @import './assets/styles.scss';
 </style>
